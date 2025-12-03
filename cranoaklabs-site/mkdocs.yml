@@ -1,0 +1,12 @@
+site_name: CranOakLabs
+# plugins:
+#   - search
+#   - mermaid2
+# nav:
+#   - labs/python/errors.ipynb
+
+plugins:
+  - mknotebooks
+  - search:
+      lang: en
+  - mermaid2
