@@ -2,11 +2,16 @@
 
 Welcome to python labs. The pre-reqs for python labs are Certified Entry-Level Python Programmer (PCEP) skills. See the Python Institutes PCEP site for details:
 
-## Pre-Reqs and Python Labs Description
+The python labs loosely follow the Python Institutes certification road map.  The road map is very extensive and we only implemented part of it.  For that matter the institute is still completing areas of the road map.  
 
-#### Pre-Reqs
 
-Basic Python skills are the required starting point.  Below are two very good starting points. 
+All the labs are run from the [python-labs folder](https://github.com/cranoak/cranoaklabs-public/blob/r1/python-labs/REAMDE.md) in github.  
+
+
+
+## Pre-Reqs
+
+You need basic Python skills in order to be comfortable with the python labs. 
 
 - [Python.org Tutorial](https://docs.python.org/3/tutorial/index.html) was created by the creators and maintainers of python. The tutorial provides PCEP level skills and in some cases goes deeper.    
 
@@ -16,6 +21,7 @@ Basic Python skills are the required starting point.  Below are two very good st
 
 
 ## Python Labs
+
 
 We progressively build on specific python certification areas.  **We do not** complete all of them as some fall out of my core competency areas.   Where Cranoak covers these areas we use one on one consultation specific to a consultants needs.
 
