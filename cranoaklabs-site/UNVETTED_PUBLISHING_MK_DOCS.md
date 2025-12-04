@@ -1,32 +1,4 @@
-## Publishing MkDocs to Amazon S3
-
-This document explains how to build and publish an MkDocs static site to Amazon S3, with an example GitHub Actions workflow and recommended best practices (CloudFront, cache headers, IAM scope).
-
-### Prerequisites
-- Python and MkDocs (or a virtualenv) in your development environment.
-- AWS CLI v2 installed and configured with credentials that can access the target S3 bucket (and CloudFront if used).
-- `mkdocs.yml` present at the repo root and your site builds into `site/` by default.
-
-Install the basics if needed:
-
-```bash
-pip install mkdocs
-# optional theme
-pip install mkdocs-material
 ```
-
-Configure AWS credentials (recommended: named profile or CI secrets):
-
-```bash
-aws configure --profile deployer
-# or set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in environment
-```
-
-### Build the site
-From the repository root (where `mkdocs.yml` lives):
-
-```bash
-mkdocs build
 # or explicitly
 mkdocs build -d site
 ```
@@ -38,13 +10,6 @@ Option A — simple public S3 website (no HTTPS by default):
 aws s3 mb s3://my-mkdocs-bucket --region us-east-1
 aws s3 website s3://my-mkdocs-bucket --index-document index.html --error-document 404.html
 ```
-
-If you expose the bucket publicly, add a bucket policy that allows public GETs to `arn:aws:s3:::my-mkdocs-bucket/*`.
-
-Option B — recommended: S3 (private) + CloudFront (HTTPS, caching)
-- Block public access on the S3 bucket.
-- Configure CloudFront with the S3 origin and use an Origin Access Control (OAC) so CloudFront can read from S3.
-- Use ACM for TLS and Route 53 for DNS if you want a custom domain.
 
 ### Sync files to S3
 The simplest deployment:

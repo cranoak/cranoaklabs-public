@@ -10,6 +10,8 @@
 
 Please see [James Willet Mkdocs setup](https://jameswillett.dev/getting-started-with-material-for-mkdocs/) for details.  This shows how to configure VSCode for MKDOCS and Material.
 
+###  Start site after setup
+`mkdocs serve`
 
 ```
 # chekc .gitignore is configured for python
@@ -21,21 +23,23 @@ pip install mkdocs-mermaid2-plugin
 # https://pypi.org/project/mknotebooks/
 pip install mknotebooks
 
-
-
-
-
 # cd daves_sample_site/
 pwd 
 /home/david/git/cranoak/cranoakmono-repo/python-dev-site
 
 mkdocs new .
-# update mkdocs.yml
-# https://github.com/squidfunk/mkdocs-material/discussions/7126
+
+
+```
+### update mkdocs.yml
+ https://github.com/squidfunk/mkdocs-material/discussions/7126
+
+```
 plugins:
   - search:
       lang: en
   - mermaid2
+```
 mkdocs serve
 
 ## Publish S3
