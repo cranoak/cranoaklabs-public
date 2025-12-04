@@ -1,4 +1,4 @@
-# Welcome to David Benna Labs
+# 
 
 These labs and blogs are published under the [MIT License](./LICENSE) 
 
