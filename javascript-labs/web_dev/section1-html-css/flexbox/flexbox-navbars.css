@@ -1,0 +1,64 @@
+.seperator {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: cornflowerblue;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar2 {
+  display: flex;
+  justify-content: center;
+  background-color: coral;
+}
+
+.navbar2 a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar2 .right {
+  margin-left: auto;
+}
+
+.navbar3 {
+  display: flex;
+  background-color: greenyellow;
+}
+
+/* NOTICE using align-self:flex-end*/
+
+.navbar3 a {
+  padding: 14px 20px;
+  text-decoration: none;
+  /*text-align: center;*/
+}
+
+/* .navbar3 .right {
+  margin-left: auto;
+} */
+
+.navbar3>a:nth-of-type(4) {
+  align-self: flex-end;
+  color: red;
+}
+
+@media (max-width: 600px) {
+  .navbar3 {
+    flex-direction: column;
+    align-self: auto;
+  }
+}

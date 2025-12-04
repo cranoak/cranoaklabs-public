@@ -1,0 +1,52 @@
+.seperator {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  height: 10px;
+}
+
+.wrapper {
+  display: grid;
+  background-color: rgb(241, 158, 76);
+  border: 2px solid orangered
+}
+
+div {
+  border: 2px dotted rgb(158, 97, 74)
+}
+
+
+.wrapper2 {
+  display: grid;
+  background-color: rgb(241, 158, 76);
+  border: 2px solid orangered;
+  grid-template-columns: 2fr 150px 200px;
+}
+
+.wrapper2 div:nth-of-type(7) {
+  width: 500px;
+  background-color: bisque;
+}
+
+
+div {
+  border: 2px dotted rgb(158, 97, 74);
+  background-color: darkseagreen;
+
+}
+
+.wrapper3 {
+  padding: 10px;
+  display: grid;
+  background-color: rgb(241, 158, 76);
+  border: 2px solid orangered;
+  grid-template-rows: 100px 150px 200px;
+}
+
+
+.wrapper4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(153, 241, 76);
+  border: 2px solid orangered;
+}

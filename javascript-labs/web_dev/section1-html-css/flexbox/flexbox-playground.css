@@ -1,0 +1,46 @@
+body {
+  font-size: 1.25rem;
+  display: flex;
+  gap: 1rem;
+}
+
+section div {
+  font-family: monospace;
+  padding: 3px;
+}
+
+section {
+  border: solid 1.5px tomato;
+  height: 300px;
+  width: 300px;
+  flex-wrap: wrap;
+  /* used by flex only */
+  gap: 0.2rem;
+  /* not used by block */
+}
+
+.olive {
+  background-color: olive;
+}
+
+.coral {
+  background-color: coral;
+}
+
+.deepskyblue {
+  background-color: deepskyblue;
+}
+
+.orchid {
+  background-color: orchid;
+}
+
+.slateblue {
+  background-color: slateblue;
+  color: white;
+}
+
+.maroon {
+  background-color: maroon;
+  color: white;
+}

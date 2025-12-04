@@ -1,0 +1,40 @@
+.seperator {
+  height: 10px;
+  width: 100%;
+  background-color: black;
+}
+
+.parent {
+  counter-reset: item 0;
+  background-color: lightblue;
+}
+
+li {
+  counter-increment: item;
+}
+
+li::before {
+  content: counter(item) " - ";
+}
+
+li::after {
+  content: " I added this to everything..... ";
+}
+
+.sub-list-one {
+  counter-set: item 10;
+}
+
+.sub-list-two {
+  counter-set: item 0;
+}
+
+/* section h3*/
+body {
+  counter-reset: section;
+}
+
+h3::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}

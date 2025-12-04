@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic JS</title>
+</head>
+
+<style type="text/css">
+  .done {
+    color: darkseagreen;
+    text-decoration: line-through solid black 2px;
+  }
+</style>
+
+
+<body>
+  <p class="done">Done now</p>
+
+  <p>Instructions for life:</p>
+
+  <ul>
+    <li>Eat</li>
+    <li>Sleep</li>
+    <li>Repeat</li>
+  </ul>
+
+</body>
+<!-- Need to put script in the bottom to work. Can't go in <head> -->
+<script>
+  const listItems = document.querySelectorAll("li");
+
+  function toggleDone(e) {
+    if (!e.target.className) {
+      e.target.className = "done";
+    } else {
+      e.target.className = "";
+    }
+  }
+
+  listItems.forEach((item) => {
+    item.addEventListener("click", toggleDone);
+  });
+</script>
+
+</html>

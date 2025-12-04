@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felxbox Playground</title>
+  <link rel="stylesheet" href="./flexbox-playground.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./flexbox-playground.js"></script>
+</head>
+
+<body>
+  <section>
+    <div class="seperator" id="topseperator">
+      sdlkfjadlkjasdklfjasdklfalsdkjfklasdkl
+    </div>
+
+  </section>
+  <section>
+    <div class="olive">Olive</div>
+    <div class="coral">Coral</div>
+    <div class="deepskyblue">Deep<br />sky<br />blue</div>
+    <div class="orchid">Orchid</div>
+    <div class="slateblue">Slateblue</div>
+    <div class="maroon">Maroon</div>
+  </section>
+  <fieldset class="controls">
+    <legend>Controls</legend>
+    <div class="row">
+      <label for="display">display: </label>
+      <select id="display">
+        <option value="block" selected>block</option>
+        <option value="flex">flex</option>
+        <option value="grid">grid</option>
+      </select>
+    </div>
+    <div class="row">
+      <label for="alignContent">align-content: </label>
+      <select id="alignContent">
+        <option value="normal" selected>normal</option>
+        <option value="start">start</option>
+        <option value="center">center</option>
+        <option value="end">end</option>
+        <option value="flex-start">flex-start</option>
+        <option value="flex-end">flex-end</option>
+        <option value="space-between">space-between</option>
+        <option value="space-around">space-around</option>
+        <option value="space-evenly">space-evenly</option>
+      </select>
+    </div>
+    <p>CSS applied</p>
+    <pre>
+section {
+  display: <span id="displayStyle">block</span>;
+  align-content: <span id="align">normal</span>
+}
+  </pre>
+  </fieldset>
+
+
+
+</body>
+
+</html>
